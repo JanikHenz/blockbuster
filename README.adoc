@@ -1,0 +1,65 @@
+== Emoba Assignment 1 - BlockbusterApp
+
+=== Bearbeitet von
+
+* Janik Henz
+
+
+=== Abgabe
+
+* Klasse 5iCa, Montag, 4.11.2024,  8:00 Uhr - Dieter Holz
+* Klasse 5iCb, Montag, 4.11.2024, 12:00 Uhr - Michael Job
+
+Die Abgabe erfolgt durch ein "Push" auf den Main-Branch Ihres GitHub-Repositories.
+
+=== Initiale Schritte
+
+* Tragen Sie ihren Namen unter "Bearbeitet von" ein.
+* Pushen Sie diese Änderung am besten sofort ins Git-Repository (z.B. via "Git -> Commit… -> Commit&Push")
+
+=== Die Aufgabe: Moviesuche/VideoPlayer mittels TMDB API
+
+Entwerfen und implementieren Sie einen Moviesuche/VideoPlayer für TMDB als native Android App.
+
+Es handelt sich um eine Einzelarbeit. Sich gegenseitig zu unterstützen ist durchaus erwünscht (am besten via Posting in Teams). Falls einzelne Funktionen gemeinsam entwickelt werden, ist dies im Code entsprechend zu markieren. Ansonsten wird es als Plagiat gewertet.
+
+Die im Unterricht gezeigte App ist nur eine mögliche Umsetzung des gewünschten Funktionsumfangs. Sie können dieses UI übernehmen oder aber einen eigenen Entwurf, beispielsweise wie im Modul uidC erarbeitet, umsetzen.
+Anforderungen:
+
+* Gewünschte Funktionalität
+** Suche nach Filmtitel, nach Schauspieler*in, Anzeige der Resultate und Verwalten von Lieblings-Filmen.
+*** Anzeige der Liste von gefundenen Filmen
+*** Anzeige der Liste der gefundenen Personen
+*** Anzeige und Abspielmöglichkeit des Trailers eines Films
+*** Anzeige der Liste von Lieblings-Filme
+** Abspielen, Pausieren von Trailern eines Films.
+* Verwendung der TMDB-API
+** https://developers.themoviedb.org
+* Das UI ist komplett mit Jetpack Compose zu implementieren.
+** https://developer.android.com/jetpack/compose
+* Implementierungssprache für die gesamte Applikation ist Kotlin.
+* Die im Unterricht erarbeitete Grundstruktur einer Android-App ist anzuwenden.
+* Das TMDB-Logo soll an prominenter Stelle sichtbar sein (Lizenzbedingungen)
+** https://developer.themoviedb.org/docs/faq#what-are-the-attribution-requirements
+* Weitere Libraries als die, die im Unterricht verwendet wurden, sind nicht erlaubt.
+
+
+=== Bewertung
+
+Es können in diesem Assignment maximal 4 Punkte erreicht werden. Der Fokus liegt dabei, neben der Umsetzung der gewünschten Funktionalität, auf der Code-Qualität. Der Coolness-Faktor der Applikation wird über den Coolest App Award berücksichtigt.
+
+* 4 Punkte
+** Umsetzung der gesamten gewünschten Funktionalität und der oben genannten Grundanforderungen, insbesondere:
+*** Code Struktur (3 Layer), Qualität (clean code)
+*** TestCases für ViewModels, Data Klassen und Services
+*** optional: App wurde im Unterricht präsentiert zur Teilnahme am Coolest App Award
+* 1 Punkt
+** Ein Film (durch Text-Input User) wird via TMDB-API bezogen, der Titel des Films und der Trailer wird angezeigt. Der Trailer kann abgespielt und pausiert werden.
+* 0 Punkte
+** falls die Kriterien für einen Punkt nicht erfüllt sind
+** falls das TMDB-API nicht verwendet wird
+*** die Film-Informationen wie Titel und Preview-URL müssen via API bezogen werden (keine hart-codierten Filmdaten, ID etc.)
+** falls das Projekt nicht kompilierfähig ist
+** falls die App abstürzt bevor der erste Screen angezeigt wird
+** falls ihr Name nicht unter 'bearbeitet von' eingetragen ist
+** für Plagiate
